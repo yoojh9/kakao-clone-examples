@@ -11,8 +11,16 @@
     width:200px;
     height:200px;
     border:2px solid black;
-    display: inline-block; /* block or inline or inline-block */
+    display: inline-block; /* block or inline or inline-block. */
   }
+  /*
+    박스(div와 같은)는 옆에 어떠한 것도 올 수 없음.
+    inline은 텍스트임. 텍스트는 높이와 폭이 없고 컨텐츠의 길이만 존재.
+    inline을 block 타입과 쓰게 되면 css 내의 프로퍼티들이 모두 사라져 제대로 작동을 하지 않는다.
+    하지만 inline-block이라고 설정하면 박스의 폭, 높이가 존재하고 옆에 놓을 수 있다.
+
+    즉 inline-block은 박스들이 서로 옆에 붙고, block은 박스들이 밑에 붙는다.
+  */
   </style>
 </head>
 <body>
